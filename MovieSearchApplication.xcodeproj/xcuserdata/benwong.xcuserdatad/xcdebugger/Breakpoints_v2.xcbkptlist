@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieSearchApplication/ViewController.swift"
+            timestampString = "496816881.71795"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieSearchApplication.ViewController.__deallocating_deinit"
+                  moduleName = "MovieSearchApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benwong/Desktop/IOS/MovieSearchApplication/MovieSearchApplication/ViewController.swift"
+                  timestampString = "496855215.727296"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieSearchApplication.ViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; MovieSearchApplication.ViewController"
+                  moduleName = "MovieSearchApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benwong/Desktop/IOS/MovieSearchApplication/MovieSearchApplication/ViewController.swift"
+                  timestampString = "496855215.733211"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieSearchApplication.ViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MovieSearchApplication.ViewController&gt;"
+                  moduleName = "MovieSearchApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benwong/Desktop/IOS/MovieSearchApplication/MovieSearchApplication/ViewController.swift"
+                  timestampString = "496855215.735544"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieSearchApplication.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MovieSearchApplication.ViewController&gt;"
+                  moduleName = "MovieSearchApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benwong/Desktop/IOS/MovieSearchApplication/MovieSearchApplication/ViewController.swift"
+                  timestampString = "496855215.737846"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
