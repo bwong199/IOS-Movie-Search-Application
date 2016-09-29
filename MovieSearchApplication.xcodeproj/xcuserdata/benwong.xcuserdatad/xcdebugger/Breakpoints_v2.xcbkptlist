@@ -24,7 +24,7 @@
                   moduleName = "MovieSearchApplication"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/benwong/Desktop/IOS/MovieSearchApplication/MovieSearchApplication/ViewController.swift"
-                  timestampString = "496855215.727296"
+                  timestampString = "496864112.665885"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -35,11 +35,26 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
+                  symbolName = "MovieSearchApplication.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; MovieSearchApplication.ViewController"
+                  moduleName = "MovieSearchApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benwong/Desktop/IOS/MovieSearchApplication/MovieSearchApplication/ViewController.swift"
+                  timestampString = "496864112.668939"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
                   symbolName = "MovieSearchApplication.ViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; MovieSearchApplication.ViewController"
                   moduleName = "MovieSearchApplication"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/benwong/Desktop/IOS/MovieSearchApplication/MovieSearchApplication/ViewController.swift"
-                  timestampString = "496855215.733211"
+                  timestampString = "496864112.671461"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -54,7 +69,7 @@
                   moduleName = "MovieSearchApplication"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/benwong/Desktop/IOS/MovieSearchApplication/MovieSearchApplication/ViewController.swift"
-                  timestampString = "496855215.735544"
+                  timestampString = "496864112.673666"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -69,12 +84,12 @@
                   moduleName = "MovieSearchApplication"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/benwong/Desktop/IOS/MovieSearchApplication/MovieSearchApplication/ViewController.swift"
-                  timestampString = "496855215.737846"
+                  timestampString = "496864112.675733"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "28">
+                  offsetFromSymbolStart = "31">
                </Location>
             </Locations>
          </BreakpointContent>

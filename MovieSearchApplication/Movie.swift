@@ -16,7 +16,8 @@ class Movie {
     var _release_date: String!
     var _movie_image: String!
     var _movie_data: NSData!
-    
+    var _plot: String!
+    var _rating: Int!
 
     var movie_data: NSData {
         if _movie_data == nil {
@@ -28,6 +29,13 @@ class Movie {
         return _movie_data
     }
     
+    var plot: String {
+        if _plot == nil {
+            _plot = ""
+        }
+        
+        return _plot
+    }
     
     var title: String {
         if _title == nil {
@@ -54,8 +62,9 @@ class Movie {
     }
     
     
-    func downloadMovieDetails(completed: @escaping DownloadComplete){
-        let movieURL = URL(string: SEARCH_MOVIE_URL)
+    func downloadMovieDetails(query: String, completed: @escaping DownloadComplete){
+        let cleanQuery = query.replacingOccurrences(of: " ", with: "%20")
+        let movieURL = URL(string: "\(SEARCH_MOVIE_URL)\(cleanQuery)")
         print(movieURL)
         Alamofire.request(movieURL!, method: .get ).responseJSON {response in
             
@@ -76,6 +85,15 @@ class Movie {
                                 new_movie._title = title
                             }
                             
+                            if let rating = movieObject["vote_average"] as? Int {
+                                new_movie._rating = rating
+                            }
+                            
+                            if let plot = movieObject["overview"] as? String {
+                                new_movie._plot = plot
+                            }
+
+                            
                             if let release_date = movieObject["release_date"] as? String {
                                 new_movie._release_date = release_date
                             }
@@ -90,7 +108,6 @@ class Movie {
                       
                             let anyMirror = Mirror(reflecting: movieObject["poster_path"])
 
-                            print(anyMirror)
                             if movieObject["poster_path"] == nil {
 //                                new_movie._movie_image = image
                                 new_movie._movie_image = "https://www.purdysgpp.com/images/icon-placeholder.jpg"

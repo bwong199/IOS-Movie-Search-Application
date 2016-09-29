@@ -229,6 +229,7 @@
 				TargetAttributes = {
 					C5C43A741D9CCE5800DD72A0 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = B2W6ANM3HG;
 						ProvisioningStyle = Automatic;
 					};
 					C5C43A881D9CCE5800DD72A0 = {
@@ -500,6 +501,8 @@
 			baseConfigurationReference = C0E30969AE06D7EF83741C33 /* Pods-MovieSearchApplication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B2W6ANM3HG;
 				INFOPLIST_FILE = MovieSearchApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.benwong.MovieSearchApplication;
@@ -513,6 +516,8 @@
 			baseConfigurationReference = 7B08287F8773DDBDB0B7E2B1 /* Pods-MovieSearchApplication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B2W6ANM3HG;
 				INFOPLIST_FILE = MovieSearchApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.benwong.MovieSearchApplication;

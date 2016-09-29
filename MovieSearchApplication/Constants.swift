@@ -12,7 +12,7 @@ import Foundation
 
 let BASE_URL = "https://api.themoviedb.org/3/search/movie?&language=en-US&"
 let SEARCH = "&query="
-let QUERY = "toy%20story"
+//var QUERY = "tarzan"
 let APP_ID = "api_key="
 let API_KEY = "873a05bbf1bd105ba14e62bc0de94a63"
 var MOVIE_ARRAY : [Movie] = []
@@ -20,7 +20,7 @@ var MOVIE_ARRAY : [Movie] = []
 
 typealias DownloadComplete = () -> ()
 
-let SEARCH_MOVIE_URL = "\(BASE_URL)\(APP_ID)\(API_KEY)\(SEARCH)\(QUERY)"
+let SEARCH_MOVIE_URL = "\(BASE_URL)\(APP_ID)\(API_KEY)\(SEARCH)"
 
 
 

@@ -9,28 +9,45 @@
 import UIKit
 import ImageLoader
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collection: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collection.dataSource = self
         collection.delegate = self
+        searchBar.delegate = self
         
-        Movie().downloadMovieDetails {
-            //            for x in MOVIE_ARRAY {
-            //                print(x._title)
-            //                print(x._release_date)
-            //                print("http://image.tmdb.org/t/p/w500\(x.movie_image)")
-            //
-            //            }
-            
-            self.collection.reloadData()
-        }        // Do any additional setup after loading the view, typically from a nib.
+        activityIndicatorView.isHidden = true
+
+
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
     }
     
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        dismissKeyboard()
+        activityIndicatorView.startAnimating()
+        self.activityIndicatorView.isHidden = false
+        print("SEARCH \(searchBar.text)")
+        var query = searchBar.text!
+        MOVIE_ARRAY.removeAll()
+        self.collection.reloadData()
+        Movie().downloadMovieDetails(query: query) {
+            self.collection.reloadData()
+            self.activityIndicatorView.stopAnimating()
+            self.activityIndicatorView.isHidden = true
+        }
+        searchBar.text = ""
+    }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -50,7 +67,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             
             cell.moviePoster.image =  UIImage(data: movie.movie_data as Data)
-            
             
             
             
