@@ -22,8 +22,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         searchBar.delegate = self
         
         activityIndicatorView.isHidden = true
-
-
+        
+        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
     }
@@ -49,6 +49,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         searchBar.text = ""
     }
     
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let movie : Movie
+        
+        movie = MOVIE_ARRAY[indexPath.row]
+
+        print(movie.plot)
+//        performSegue(withIdentifier: "movieDetailView", sender: nil)
+
+        
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return MOVIE_ARRAY.count
@@ -57,20 +70,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as? MovieCell {
             
-            
             let movie : Movie
             
             movie = MOVIE_ARRAY[indexPath.row]
-            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
             cell.yearLabel.text = "\(movie.release_year)"
             
-            
-            
             cell.moviePoster.image =  UIImage(data: movie.movie_data as Data)
-            
-            
-            
-            
             
             return cell
         } else {

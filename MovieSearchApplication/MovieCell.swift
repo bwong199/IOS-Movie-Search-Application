@@ -13,10 +13,9 @@ import UIKit
 
 class MovieCell: UICollectionViewCell {
     
-    @IBOutlet weak var yearLabel: UILabel!
     
     @IBOutlet weak var moviePoster: UIImageView!
-    
+    @IBOutlet weak var yearLabel: UILabel!
     required init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
         
