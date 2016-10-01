@@ -25,6 +25,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
     
@@ -49,6 +50,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         searchBar.text = ""
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        if segue.identifier == "MovieDetailSegue" {
+            if let detailsVC = segue.destination as? DetailMovieController {
+                if let movie = sender as? Movie {
+                    detailsVC.movie = movie
+                }
+                
+            }
+        }
+    }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
@@ -56,8 +69,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         movie = MOVIE_ARRAY[indexPath.row]
 
-        print(movie.plot)
-//        performSegue(withIdentifier: "movieDetailView", sender: nil)
+//        print(movie.plot)
+        performSegue(withIdentifier: "MovieDetailSegue", sender: movie)
 
         
     }

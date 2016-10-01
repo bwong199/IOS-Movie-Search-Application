@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieSearchApplication/ViewController.swift"
-            timestampString = "496874394.641067"
+            timestampString = "497027833.724589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,45 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieSearchApplication/ViewController.swift"
-            timestampString = "496873998.980741"
+            timestampString = "496904141.343922"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "searchBarSearchButtonClicked(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MovieSearchApplication.ViewController.searchBarSearchButtonClicked (__ObjC.UISearchBar) -&gt; ()"
-                  moduleName = "MovieSearchApplication"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/benwong/Desktop/IOS/MovieSearchApplication/MovieSearchApplication/ViewController.swift"
-                  timestampString = "496873999.306853"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "1904">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MovieSearchApplication.ViewController.(searchBarSearchButtonClicked (__ObjC.UISearchBar) -&gt; ()).(closure #1)"
-                  moduleName = "MovieSearchApplication"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/benwong/Desktop/IOS/MovieSearchApplication/MovieSearchApplication/ViewController.swift"
-                  timestampString = "496873999.309514"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
